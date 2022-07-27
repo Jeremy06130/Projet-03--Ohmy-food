@@ -1,14 +1,14 @@
 @import "../Utiles/variable";
 @import "../Base/base";
 @import "../Layouts/header";
+@import "../Layouts/menu-like";
 @import "../Layouts/footer";
-
 
 .local {
   display: flex;
   justify-content: center;
   padding: 1.25rem $appPadding;
-  background-color: rgb(29, 16, 16);
+  background-color: rgb(247, 221, 248);
   font-size: 1.2rem;
   position: relative;
 
@@ -35,6 +35,9 @@
     margin: 1.5rem 0;
   }
 
+  &__btn {
+    @include button(primary);
+  }
 }
 
 .tuto {
@@ -47,6 +50,8 @@
   &__steps {
     margin: 0;
     padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
 
     @media (min-width:64rem) {
       display: flex;
@@ -81,6 +86,8 @@
     }
 
     &::before {
+      counter-increment: compteListe 1;
+      content: counter(compteListe) " ";
       background: $color-primary;
       height: 1.5rem;
       width: 1.5rem;
@@ -119,13 +126,28 @@
 .card {
   background-color: white;
   border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 
   &__img {
     height: 12rem;
     width: 100%;
     border: transparent solid 0px;
     border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
     object-fit: cover;
+  }
+
+  &__badge {
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 50%);
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
   }
 
   &__footer {
@@ -154,13 +176,13 @@
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
   &__like {
-    background-color: white;
+    background-color: white!important;
   }
 }
 
