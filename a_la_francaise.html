@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=yes" />
+
+  <!--site de référence pour récupérer les icones-->
+  <script src="https://kit.fontawesome.com/0f453ed590.js" crossorigin="anonymous"></script>
+
+  <!--lien css utilisé-->
+  <link rel="stylesheet" href="css/Pages/pagemenu.css" />
+
+  <!--titre du site-->
+  <title>Restaurant "A la française" - ohmyfood!</title>
+</head>
+
+<body>
+  <header class="header header--withBackArrow">
+    <div class="restaurantContainer">
+      <!--retour vers menu principal (index.html)-->
+      <a href=".Index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
+      <h1 class="header__logo"> ohmyfood</h1>
+    </div>
+  </header>
+
+  <main>
+    <!--bloc zone image-->
+    <img src="./Images/restaurants/Assiettes .jpg" alt="" class="france">
+
+    <!--bloc contenue menu-->
+    <main class="menu container">
+      <header class="menu__header">
+        <!--Titre page-->
+        <h2 class="menu__title">A la française</h2>
+        <button class="menu__btn">
+          <!--icone coeur like active et non-active-->
+          <i class="menu__like menu__like--noBg far fa-heart fa-2x"></i>
+          <i class="menu__like menu__like--bg fas fa-heart fa-2x"></i>
+        </button>
+      </header>
+
+      <div class="submenus">
+        <section class="submenu">
+          <!--Titre boite entrée-->
+          <h3 class="submenu__title">Entrées</h3>
+
+          <!--Entrée 1-->
+          <section class="menuItemdelay-0">
+            <header class="menuItem__header">
+              <!--Intitulé-->
+              <h4 class="menuItem__title">Tartare de poulpe acidulé</h4>
+              <!--Description-->
+              <p class="menuItem__description">Aux zests d'orange</p>
+            </header>
+            <!--Prix-->
+            <div class="menuItem__price">25€</div>
+            <!--Boite validation-->
+            <div class="menuItem__confirmation">
+              <div class="menuItem__wrapIcon">
+                <i class="menuItem__icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+
+          <!--Entrée 2-->
+          <section class="menuItemdelay-1">
+            <header class="menuItem__header">
+              <!--Intitulé-->
+              <h4 class="menuItem__title">Velouté de légumes d'antan</h4>
+              <!--Description-->
+              <p class="menuItem__description">Carotte, panais, topinambour</p>
+            </header>
+            <!--Prix-->
+            <div class="menuItem__price">35€</div>
+            <!--Boite validation-->
+            <div class="menuItem__confirmation">
+              <div class="menuItem__wrapIcon">
+                <i class="menuItem__icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+
+          <!--Entrée 3-->
+          <section class="menuItemdelay-2">
+            <header class="menuItem__header">
+              <!--Intitulé-->
+              <h4 class="menuItem__title">Soupe à l'oignon</h4>
+              <!--Description-->
+              <p class="menuItem__description">Revisité</p>
+            </header>
+            <!--Prix-->
+            <div class="menuItem__price">20€</div>
+            <!--Boite validation-->
+            <div class="menuItem__confirmation">
+              <div class="menuItem__wrapIcon">
+                <i class="menuItem__icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+
+          <div class="submenus">
+            <section class="submenu">
+              <!--Titre boite entrée-->
+              <h3 class="submenu__title">Plats</h3>
+
+              <!--Plat 1-->
+              <section class="menuItemdelay-3">
+                <header class="menuItem__header">
+                  <!--Intitulé-->
+                  <h4 class="menuItem__title">Coquilles Saint-Jacques</h4>
+                  <!--Description-->
+                  <p class="menuItem__description">Accompagné d'une purée de panais</p>
+                </header>
+                <!--Prix-->
+                <div class="menuItem__price">40€</div>
+                <!--Boite validation-->
+                <div class="menuItem__confirmation">
+                  <div class="menuItem__wrapIcon">
+                    <i class="menuItem__icon fas fa-check"></i>
+                  </div>
+                </div>
+              </section>
+          </div>
+        </section>
+
+    </main>
+
+    <!--Pied de page-->
+    <footer class="footer">
+      <div class="container">
+        <!--Logo-->
+        <span class="footer__logo">ohmyfood</span>
+        <ul class="footer__list">
+          <!--titre avec icon couverts-->
+          <li class="footer__listElt">
+            <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
+          </li>
+          <!--Titre avec icon mains-->
+          <li class="footer__listElt">
+            <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
+          </li>
+          <!--sous titre 1-->
+          <li class="footer__listElt">
+            <a class="footer__link" href="#">Mentions légales</a>
+          </li>
+          <!--sous titre 2-->
+          <li class="footer__listElt">
+            <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+</body>
+
+</html>
