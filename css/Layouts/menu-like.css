@@ -1,17 +1,44 @@
-/* Error: expected "}".
- *   ,
- * 1 | .menu__btn {
- *   |             ^
- *   '
- *   scss\Layouts\menu-like.scss 1:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a   \2577 \a 1 \2502  .menu__btn {\a   \2502              ^\a   \2575 \a   scss\\Layouts\\menu-like.scss 1:13  root stylesheet';
+.menu__like {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
 }
+.menu__like:hover::before {
+  opacity: 1;
+}
+.menu__like::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.menu__like__like {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+.menu__like__btn:hover .menu__like--noBg {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=menu-like.css.map */

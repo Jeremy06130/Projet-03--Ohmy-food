@@ -1,7 +1,22 @@
+//importation des fichiers SASS
+//utiles
 @import "../Utiles/variable";
+@import "../Utiles/animation";
+
+//page type
+@import "../Pages/pagetype";
+//Base
+@import "../Base/Styles";
+
+//Layouts
 @import "../Layouts/header";
-@import "../Layouts/menu-like";
+@import "../Layouts/box";
+@import "../Layouts/main";
+@import "../Layouts/section";
 @import "../Layouts/footer";
+
+// Components
+@import "../Components/bouton";
 
 .header {
     &--withBackArrow {

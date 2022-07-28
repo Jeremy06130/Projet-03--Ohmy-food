@@ -1,8 +1,22 @@
+//importation des fichiers SASS
+//utiles
 @import "../Utiles/variable";
-@import "../Base/base";
+@import "../Utiles/animation";
+
+//page type
+@import "../Pages/pagetype";
+//Base
+@import "../Base/Styles";
+
+//Layouts
 @import "../Layouts/header";
-@import "../Layouts/menu-like";
+@import "../Layouts/box";
+@import "../Layouts/main";
+@import "../Layouts/section";
 @import "../Layouts/footer";
+
+// Components
+@import "../Components/bouton";
 
 .local {
   display: flex;
@@ -27,16 +41,16 @@
   background-color: rgb(250, 250, 250);
 
   &__title {
-    margin: 0;
+      margin: 0;
   }
 
   &__subtitle {
-    font-weight: 300;
-    margin: 1.5rem 0;
+      font-weight: 300;
+      margin: 1.5rem 0;
   }
 
   &__btn {
-    @include button(primary);
+      @include button(primary);
   }
 }
 
