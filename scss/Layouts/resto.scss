@@ -1,5 +1,5 @@
 
-.section {
+.resto {
     &__title {
       padding: 28px 0px 8px 26px;
       font-weight: 800;
@@ -8,7 +8,7 @@
     &--fonctionnement {
       background-color: white;
       padding-bottom: 18px;
-      .step {
+      .tuto {
         display: flex;
         justify-content: flex-start;
         box-shadow: 0 5px 16px #0000002e;
@@ -52,7 +52,7 @@
     &--restaurants {
       background-color: #99e2d029;;
       padding-bottom: 45px;
-      .resto {
+      .card {
         border-radius: 15px;
         width: 88%;
         height: 205px;
