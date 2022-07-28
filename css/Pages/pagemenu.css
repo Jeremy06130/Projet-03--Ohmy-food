@@ -1,10 +1,9 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |     background-image: linear-gradient(135deg,$secondaire,$primaire) ;
- *   |                                              ^^^^^^^^^^^
- *   '
- *   scss\Components\bouton.scss 2:46  @import
- *   scss\Pages\pagemenu.scss 19:9     root stylesheet */
+/* Error: Undefined mixin.
+ *     ,
+ * 232 |     @include button($color-primary);
+ *     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   scss\Pages\pagemenu.scss 232:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      background-image: linear-gradient(135deg,$secondaire,$primaire) ;\d\a   \2502                                               ^^^^^^^^^^^\a   \2575 \a   scss\\Components\\bouton.scss 2:46  @import\a   scss\\Pages\\pagemenu.scss 19:9     root stylesheet";
+  content: "Error: Undefined mixin.\a     \2577 \a 232 \2502      @include button($color-primary);\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\Pages\\pagemenu.scss 232:5  root stylesheet";
 }
