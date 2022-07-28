@@ -32,7 +32,7 @@
   font-size: 20px;
 }
 
-/* RESPONSIVE */
+/* VERSION RESPONSIVE */
 @media (min-width: 1025px) {
   .main--1 {
     width: 90%;

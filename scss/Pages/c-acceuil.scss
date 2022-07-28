@@ -51,7 +51,7 @@
   }
 
   &__btn {
-      @include button(primary);
+      @include button($color-primary);
   }
 }
 

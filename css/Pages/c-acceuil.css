@@ -1,7 +1,7 @@
 /* Error: Undefined mixin.
  *    ,
- * 54 |       @include button(primary);
- *    |       ^^^^^^^^^^^^^^^^^^^^^^^^
+ * 54 |       @include button($color-primary);
+ *    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
  *   scss\Pages\c-acceuil.scss 54:7  root stylesheet */
 
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 54 \2502        @include button(primary);\a    \2502        ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\Pages\\c-acceuil.scss 54:7  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 54 \2502        @include button($color-primary);\a    \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\Pages\\c-acceuil.scss 54:7  root stylesheet";
 }
