@@ -110,9 +110,9 @@
   /* Responsive */
   
   @media (min-width: 250px) and (max-width: 350px) {
-    .section {
+    .resto {
       &--fonctionnement {
-        .step {
+        .tuto {
           width: 80%;
         }
       }
@@ -120,19 +120,19 @@
   }
   
   @media (min-width: 450px) and (max-width: 1601px) {
-    .section {
+    .resto {
       &__title {
         padding: 28px 0px 7px 0px;
         text-align: center;
       }
-      .step {
+      .tuto {
         margin: 20px auto 20px auto;
       }
     }
   }
   
   @media (min-width: 768px) and (max-width: 1024px) {
-    .section {
+    .resto {
       &--restaurants {
         .transform {
           display: flex;
@@ -163,12 +163,12 @@
   }
   
   @media (min-width: 1601px) {
-    .section {
+    .resto {
       &__title {
         padding: 28px 0px 7px 0px;
         text-align: center;
       }
-      .step {
+      .tuto {
         margin: 20px auto 20px auto;
       }
     }

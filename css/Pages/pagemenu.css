@@ -357,25 +357,25 @@ a {
 
 /* Responsive */
 @media (min-width: 250px) and (max-width: 350px) {
-  .section--fonctionnement .step {
+  .resto--fonctionnement .tuto {
     width: 80%;
   }
 }
 @media (min-width: 450px) and (max-width: 1601px) {
-  .section__title {
+  .resto__title {
     padding: 28px 0px 7px 0px;
     text-align: center;
   }
-  .section .step {
+  .resto .tuto {
     margin: 20px auto 20px auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .section--restaurants .transform {
+  .resto--restaurants .transform {
     display: flex;
     flex-wrap: wrap;
   }
-  .section--restaurants .resto {
+  .resto--restaurants .resto {
     width: 45%;
   }
 }
@@ -392,11 +392,11 @@ a {
   }
 }
 @media (min-width: 1601px) {
-  .section__title {
+  .resto__title {
     padding: 28px 0px 7px 0px;
     text-align: center;
   }
-  .section .step {
+  .resto .tuto {
     margin: 20px auto 20px auto;
   }
   .section--restaurants {

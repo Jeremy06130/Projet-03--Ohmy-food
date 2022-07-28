@@ -28,25 +28,32 @@
       <h1 class="header__logo"> <img src="Images/logo/ohmyfood.png" alt="logo"></h1>
     </header>
 
-    <main>
-      <!--bloc zone recherche-->
-      <section class="local">
-        <i class="fas fa-map-marker-alt local__icon"></i>
-        <span class="local__text">Paris, Belleville</span>
-      </section>
 
-      <section class="intro">
-        <!--titre intro-->
-        <h2 class="intro__title">Réservez le menu qui<br>vous convient</h2>
-        <!--sous-titre intro-->
-        <p class="intro__subtitle">
-          Découvrez des restaurants d'exception, séléctionnés par nos soins
-        </p>
-        <a class="intro__button">
-          Explorer nos restaurants
-        </a>
-      </section>
+    <!--bloc zone recherche-->
+    <div class="local">
+      <div class="local__iconemap">
+        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+      </div>
+      <div class="local__content">
+        <a class="local__text">Paris, Belleville</a>
+      </div>
+    </div>
 
+    <div class="intro">
+      <!--titres intro-->
+      <div class="intro__content">
+        <h1 class="intro__title">Réservez le menu qui vous convient</h1>
+        <p class="intro__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+      </div>
+      <!--bouton exploration-->
+      <button class="button">
+        <span class="button__text">Explorer nos restaurants</>
+      </button>
+
+      </a>
+    </div>
+
+    <main class="main">
       <!--tutorielle du site-->
       <section class="tuto">
         <div class="container">
@@ -79,104 +86,105 @@
       </section>
 
       <!--restaurant-->
-      <section class="resto">
+      <section class="resto resto--restaurants">
         <div class="container">
           <!--titre-->
           <h2 class="resto__title">Restaurants</h2>
           <!--les cartes-->
-          <div class="cards">
+          <div class="transform">
+            <div class="cards">
 
-            <!--carte 1-->
-            <a class="card">
-              <!--image de la carte-->
-              <img src="Images/restaurants/jay-wennington-.jpg" alt="" class="card__img">
-              <!--badge : nouveau-->
-              <span class="card1__badge">Nouveau</span>
-              <!--partie bas de la carte-->
-              <footer class="card__footer">
-                <div class="card__content">
-                  <!--titre de la carte-->
-                  <h3 class="card__title">La palette du goût</h3>
-                  <!--Sous titre de la carte-->
-                  <span class="card__subtitle">Ménilmontant</span>
-                </div>
-                <!--Icone like de la carte-->
-                <div class="card__heart">
-                  <!--like non activé-->
-                  <i class="far fa-heart" aria-hidden="true"></i>
-                  <!--like activé-->
-                  <i class="fas fa-heart fa-heart-animated"></i>
-                </div>
-              </footer>
-            </a>
+              <!--carte 1-->
+              <a class="card" href="#">
+                <!--image de la carte-->
+                <img src="Images/restaurants/jay-wennington-.jpg" alt="" class="card__img">
+                <!--badge : nouveau-->
+                <span class="card1__badge">Nouveau</span>
+                <!--partie bas de la carte-->
+                <footer class="card__footer">
+                  <div class="card__content">
+                    <!--titre de la carte-->
+                    <h3 class="card__title">La palette du goût</h3>
+                    <!--Sous titre de la carte-->
+                    <span class="card__subtitle">Ménilmontant</span>
+                  </div>
+                  <!--Icone like de la carte-->
+                  <div class="card__heart">
+                    <!--like non activé-->
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <!--like activé-->
+                    <i class="fas fa-heart fa-heart-animated"></i>
+                  </div>
+                </footer>
+              </a>
 
-            <!--carte 2-->
-            <a class="card">
-              <!--image de la carte-->
-              <img src="Images/restaurants/Assiettes .jpg" alt="" class="card__img">
-              <!--badge : nouveau-->
-              <span class="card1__badge">Nouveau</span>
-              <!--partie bas de la carte-->
-              <footer class="card__footer">
-                <div class="card__content">
-                  <!--titre de la carte-->
-                  <h3 class="card__title">La note enchantée</h3>
-                  <!--Sous titre de la carte-->
-                  <span class="card__subtitle">Charonne</span>
-                </div>
-                <!--Icone like de la carte-->
-                <div class="card__heart">
-                  <!--like non activé-->
-                  <i class="far fa-heart" aria-hidden="true"></i>
-                  <!--like activé-->
-                  <i class="fas fa-heart fa-heart-animated"></i>
-              </footer>
-            </a>
+              <!--carte 2-->
+              <a class="card">
+                <!--image de la carte-->
+                <img src="Images/restaurants/Assiettes .jpg" alt="" class="card__img">
+                <!--badge : nouveau-->
+                <span class="card1__badge">Nouveau</span>
+                <!--partie bas de la carte-->
+                <footer class="card__footer">
+                  <div class="card__content">
+                    <!--titre de la carte-->
+                    <h3 class="card__title">La note enchantée</h3>
+                    <!--Sous titre de la carte-->
+                    <span class="card__subtitle">Charonne</span>
+                  </div>
+                  <!--Icone like de la carte-->
+                  <div class="card__heart">
+                    <!--like non activé-->
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <!--like activé-->
+                    <i class="fas fa-heart fa-heart-animated"></i>
+                </footer>
+              </a>
 
-            <!--carte 3-->
-            <a class="card" href="./a_la_francaise.html">
-              <!--image de la carte-->
-              <img src="Images/restaurants/toa-heftiba.jpg" alt="" class="card__img">
-              <!--partie bas de la carte-->
-              <footer class="card__footer">
-                <div class="card__content">
-                  <!--titre de la carte-->
-                  <h3 class="card__title">à la française</h3>
-                  <!--Sous titre de la carte-->
-                  <span class="card__subtitle">Cité Rouge</span>
-                </div>
-                <!--Icone like de la carte-->
-                <div class="card__heart">
-                  <!--like non activé-->
-                  <i class="far fa-heart" aria-hidden="true"></i>
-                  <!--like activé-->
-                  <i class="fas fa-heart fa-heart-animated"></i>
-                </div>
-              </footer>
-            </a>
+              <!--carte 3-->
+              <a class="card" href="./a_la_francaise.html">
+                <!--image de la carte-->
+                <img src="Images/restaurants/toa-heftiba.jpg" alt="" class="card__img">
+                <!--partie bas de la carte-->
+                <footer class="card__footer">
+                  <div class="card__content">
+                    <!--titre de la carte-->
+                    <h3 class="card__title">à la française</h3>
+                    <!--Sous titre de la carte-->
+                    <span class="card__subtitle">Cité Rouge</span>
+                  </div>
+                  <!--Icone like de la carte-->
+                  <div class="card__heart">
+                    <!--like non activé-->
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <!--like activé-->
+                    <i class="fas fa-heart fa-heart-animated"></i>
+                  </div>
+                </footer>
+              </a>
 
-            <!--carte 4-->
-            <a class="card">
-              <!--image de la carte-->
-              <img src="Images/restaurants/louis-hansel-shotsoflouis.jpg" alt="" class="card__img">
-              <!--partie bas de la carte-->
-              <footer class="card__footer">
-                <div class="card__content">
-                  <!--titre de la carte-->
-                  <h3 class="card__title">Le délice des sens</h3>
-                  <!--Sous titre de la carte-->
-                  <span class="card__subtitle">Cité Rouge</span>
-                </div>
-                <!--Icone like de la carte-->
-                <div class="card__heart">
-                  <!--like non activé-->
-                  <i class="far fa-heart" aria-hidden="true"></i>
-                  <!--like activé-->
-                  <i class="fas fa-heart fa-heart-animated"></i>>
-                </div>
-              </footer>
-            </a>
-
+              <!--carte 4-->
+              <a class="card">
+                <!--image de la carte-->
+                <img src="Images/restaurants/louis-hansel-shotsoflouis.jpg" alt="" class="card__img">
+                <!--partie bas de la carte-->
+                <footer class="card__footer">
+                  <div class="card__content">
+                    <!--titre de la carte-->
+                    <h3 class="card__title">Le délice des sens</h3>
+                    <!--Sous titre de la carte-->
+                    <span class="card__subtitle">Cité Rouge</span>
+                  </div>
+                  <!--Icone like de la carte-->
+                  <div class="card__heart">
+                    <!--like non activé-->
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <!--like activé-->
+                    <i class="fas fa-heart fa-heart-animated"></i>
+                  </div>
+                </footer>
+              </a>
+            </div>
           </div>
       </section>
     </main>
