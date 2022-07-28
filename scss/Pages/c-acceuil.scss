@@ -42,16 +42,16 @@
   background-color: rgb(250, 250, 250);
 
   &__title {
-      margin: 0;
+    margin: 0;
   }
 
   &__subtitle {
-      font-weight: 300;
-      margin: 1.5rem 0;
+    font-weight: 300;
+    margin: 1.5rem 0;
   }
 
   &__btn {
-      @include button($color-primary);
+    @include button($color-primary);
   }
 }
 
@@ -191,13 +191,13 @@
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__like {
-    background-color: white!important;
+    background-color: white !important;
   }
 }
 
