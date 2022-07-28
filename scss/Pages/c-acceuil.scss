@@ -10,7 +10,9 @@
 @import "../Base/Styles";
 
 //Layouts
+@import "../Layouts/section";
 @import "../Layouts/header";
+@import "../Layouts/local";
 @import "../Layouts/box";
 @import "../Layouts/main";
 @import "../Layouts/section";
@@ -19,22 +21,6 @@
 // Components
 @import "../Components/bouton";
 
-.local {
-  display: flex;
-  justify-content: center;
-  padding: 1.25rem $appPadding;
-  background-color: rgb(247, 221, 248);
-  font-size: 1.2rem;
-  position: relative;
-
-  &__icon {
-    margin-right: 1rem;
-  }
-
-  &__text {
-    font-weight: 700;
-  }
-}
 
 .intro {
   padding: 2rem;

@@ -5,16 +5,18 @@
 
 //page type
 @import "../Pages/pagetype";
+
 //Base
 @import "../Base/Styles";
 
 //Layouts
+@import "../Layouts/section";
 @import "../Layouts/header";
 @import "../Layouts/box";
 @import "../Layouts/main";
 @import "../Layouts/section";
-@import "../Layouts/menu-like";
 @import "../Layouts/footer";
+
 
 // Components
 @import "../Components/bouton";
