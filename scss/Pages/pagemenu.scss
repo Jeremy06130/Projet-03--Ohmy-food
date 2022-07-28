@@ -229,8 +229,3 @@
   justify-content: center;
   padding: 3rem 0;
 }
-
-.commandBtn {
-  @include button($color-primary);
-  cursor: pointer;
-}

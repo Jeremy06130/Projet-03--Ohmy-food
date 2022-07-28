@@ -50,9 +50,6 @@
     margin: 1.5rem 0;
   }
 
-  &__btn {
-    @include button($color-primary);
-  }
 }
 
 .tuto {
