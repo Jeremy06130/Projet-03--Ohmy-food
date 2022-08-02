@@ -42,7 +42,7 @@
     }
   }
   
-  /* Animation du coeur*/
+  /* Animation du like*/
   
   .fa-heart-animated {
     position: absolute;
@@ -71,7 +71,7 @@
   @keyframes off{
     from {
     
-      opacity: 90%;
+      opacity: 80%;
   }
   to {
     display: none;
