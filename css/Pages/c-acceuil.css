@@ -628,6 +628,9 @@ a {
   display: flex;
   position: relative;
 }
+.tuto__step:hover {
+  background-color: #dabfd2;
+}
 @media (min-width: 64rem) {
   .tuto__step {
     flex: 1;

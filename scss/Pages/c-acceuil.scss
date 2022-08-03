@@ -121,6 +121,7 @@
     list-style: none;
     counter-reset: compteListe;
 
+
     @media (min-width:64rem) {
       display: flex;
     }
@@ -134,6 +135,9 @@
     background-color: #f6f6f6;
     display: flex;
     position: relative;
+    &:hover {
+      background-color: $color-rose;
+    }
 
     @media (min-width:64rem) {
       flex: 1;
