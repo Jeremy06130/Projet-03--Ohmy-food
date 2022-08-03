@@ -39,7 +39,7 @@
   animation-delay: 1s;
 }
 
-/* Animation du coeur*/
+/* Animation du like*/
 .fa-heart-animated {
   position: absolute;
   left: 50%;
@@ -63,7 +63,7 @@
 /* Animation du bloc */
 @keyframes off {
   from {
-    opacity: 90%;
+    opacity: 80%;
   }
   to {
     display: none;
@@ -122,7 +122,7 @@ a {
 .local {
   display: flex;
   justify-content: center;
-  background-color: rgb(117, 194, 127);
+  background-color: #99E2D0;
 }
 .local__image {
   width: 100%;
@@ -350,7 +350,7 @@ a {
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
-  border-top-color: #9356DC;
+  border-top-color: #9356dc;
   animation: rotate linear infinite;
   animation-duration: 3s;
 }

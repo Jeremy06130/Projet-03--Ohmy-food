@@ -39,7 +39,7 @@
   animation-delay: 1s;
 }
 
-/* Animation du coeur*/
+/* Animation du like*/
 .fa-heart-animated {
   position: absolute;
   left: 50%;
@@ -63,7 +63,7 @@
 /* Animation du bloc */
 @keyframes off {
   from {
-    opacity: 90%;
+    opacity: 80%;
   }
   to {
     display: none;

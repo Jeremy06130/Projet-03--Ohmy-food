@@ -21,8 +21,93 @@
 // Components
 @import "../Components/bouton";
 
+/* Responsive */
+.container{
+@media (min-width: 250px) and (max-width: 350px) {
+  .container {
+    &--fonctionnement {
+      .tuto {
+        width: 80%;
+      }
+    }
+  }
+}
 
+@media (min-width: 450px) and (max-width: 1601px) {
+  .container {
+    &__title {
+      padding: 28px 0px 7px 0px;
+      text-align: center;
+    }
+    .tuto {
+      margin: 20px auto 20px auto;
+    }
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    &--restaurants {
+      .transform {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .container {
+    &--restaurants {
+      .transform {
+        display: flex;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      .card {
+        box-sizing: border-box;
+        width: calc(33.3% - 10px);
+        margin: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1601px) {
+  .container {
+    &__title {
+      padding: 28px 0px 7px 0px;
+      text-align: center;
+    }
+    .tuto {
+      margin: 20px auto 20px auto;
+    }
+  }
+
+  .container {
+    &--restaurants {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1440px;
+      border-radius: 30px 30px 0px 0px;
+      .transform {
+        display: flex;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      .card {
+        box-sizing: border-box;
+        width: calc(33.3% - 10px);
+        margin: 15px;
+      }
+    }
+  }
+}
+
+}
 .tuto {
   padding: ($appPadding + 1rem) $appPadding;
 
@@ -101,43 +186,47 @@
   }
 }
 
-.card {
-  background-color: white;
-  border-radius: 1rem;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  border : solid 1px red;
+.restaurants {
+  background-color: $color-gris;;
+  padding-bottom: 45px;
+}
 
-  &__img {
-    height: 12rem;
+.card {
+  border-radius: 15px;
+  width: 88%;
+  height: 205px;
+  box-shadow: 0 5px 16px #0000002e;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+
+  &__image img {
     width: 100%;
-    border: transparent solid 0px;
-    border-radius: 1rem 1rem 0 0;
-    box-shadow: none;
+    height: 134px;
+    border-radius: 14px 14px 0px 0px;
     object-fit: cover;
   }
 
   &__badge {
-    background-color: $color-tertiary;
-    color: darken($color-tertiary, 50%);
-    padding: 0.5rem;
-    border-radius: 0.125rem;
     position: absolute;
-    top: 1rem;
-    right: 0.75rem;
-  }
-
-  &__footer {
-    padding: 1rem;
-    position: relative;
-    display: flex;
-    align-items: center;
+    top: 13px;
+    right: 8px;
+    background: $color-tertiary;
+    padding: 4px 13px;
+    font-size: 14px;
+    color: $color-vert;
+    font-weight: 800;  
   }
 
   &__content {
-    flex: 1;
+    display: grid;
+    padding: 5px 181px 0px 0px;
+    color: black;
+    padding: 10px 0px 0px 13px;
   }
 
   &__title {
@@ -149,28 +238,16 @@
     margin: 0;
   }
 
-  &__btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: transparent;
-    border: transparent 0px solid;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__like {
-    background-color: white !important;
-  }
-}
-
-.card1 {
-  &__badge {
-    background-color: $color-tertiary;
-    padding: 0.5rem;
+  &__heart {
     position: absolute;
-    top: 1rem;
-    right: 0.75rem;
+    right: 28px;
+    bottom: 30px;
+    font-size: 25px;
+
+    &:hover .fa-heart-animated {
+      font-size: 25px;
+    }
   }
 }
+
+

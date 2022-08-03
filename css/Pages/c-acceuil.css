@@ -39,7 +39,7 @@
   animation-delay: 1s;
 }
 
-/* Animation du coeur*/
+/* Animation du like*/
 .fa-heart-animated {
   position: absolute;
   left: 50%;
@@ -63,7 +63,7 @@
 /* Animation du bloc */
 @keyframes off {
   from {
-    opacity: 90%;
+    opacity: 80%;
   }
   to {
     display: none;
@@ -122,7 +122,7 @@ a {
 .local {
   display: flex;
   justify-content: center;
-  background-color: rgb(117, 194, 127);
+  background-color: #99E2D0;
 }
 .local__image {
   width: 100%;
@@ -512,7 +512,7 @@ a {
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
-  border-top-color: #9356DC;
+  border-top-color: #9356dc;
   animation: rotate linear infinite;
   animation-duration: 3s;
 }
@@ -538,6 +538,68 @@ a {
   opacity: 1;
   animation: flash 1.5s;
   box-shadow: 5px 15px 21px rgba(0, 0, 0, 0.5019607843);
+}
+
+/* Responsive */
+@media (min-width: 250px) and (max-width: 350px) {
+  .container .container--fonctionnement .tuto {
+    width: 80%;
+  }
+}
+@media (min-width: 450px) and (max-width: 1601px) {
+  .container .container__title {
+    padding: 28px 0px 7px 0px;
+    text-align: center;
+  }
+  .container .container .tuto {
+    margin: 20px auto 20px auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .container--restaurants .transform {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .container--restaurants .card {
+    width: 45%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .container .container--restaurants .transform {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .container .container--restaurants .card {
+    box-sizing: border-box;
+    width: calc(33.3% - 10px);
+    margin: 15px;
+  }
+}
+@media (min-width: 1601px) {
+  .container .container__title {
+    padding: 28px 0px 7px 0px;
+    text-align: center;
+  }
+  .container .container .tuto {
+    margin: 20px auto 20px auto;
+  }
+  .container .container--restaurants {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    border-radius: 30px 30px 0px 0px;
+  }
+  .container .container--restaurants .transform {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .container .container--restaurants .card {
+    box-sizing: border-box;
+    width: calc(33.3% - 10px);
+    margin: 15px;
+  }
 }
 
 .tuto {
@@ -613,39 +675,44 @@ a {
   }
 }
 
-.card {
-  background-color: white;
-  border-radius: 1rem;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.restaurants {
+  background-color: rgba(153, 226, 208, 0.1607843137);
+  padding-bottom: 45px;
 }
-.card__img {
-  height: 12rem;
+
+.card {
+  border-radius: 15px;
+  width: 88%;
+  height: 205px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1803921569);
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.card__image img {
   width: 100%;
-  border: transparent solid 0px;
-  border-radius: 1rem 1rem 0 0;
-  box-shadow: none;
+  height: 134px;
+  border-radius: 14px 14px 0px 0px;
   object-fit: cover;
 }
 .card__badge {
-  background-color: #99E2D0;
-  color: #1b6150;
-  padding: 0.5rem;
-  border-radius: 0.125rem;
   position: absolute;
-  top: 1rem;
-  right: 0.75rem;
-}
-.card__footer {
-  padding: 1rem;
-  position: relative;
-  display: flex;
-  align-items: center;
+  top: 13px;
+  right: 8px;
+  background: #99E2D0;
+  padding: 4px 13px;
+  font-size: 14px;
+  color: #369658;
+  font-weight: 800;
 }
 .card__content {
-  flex: 1;
+  display: grid;
+  padding: 5px 181px 0px 0px;
+  color: black;
+  padding: 10px 0px 0px 13px;
 }
 .card__title {
   margin: 0;
@@ -654,26 +721,14 @@ a {
 .card__subtitle {
   margin: 0;
 }
-.card__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card__like {
-  background-color: white !important;
-}
-
-.card1__badge {
-  background-color: #99E2D0;
-  padding: 0.5rem;
+.card__heart {
   position: absolute;
-  top: 1rem;
-  right: 0.75rem;
+  right: 28px;
+  bottom: 30px;
+  font-size: 25px;
+}
+.card__heart:hover .fa-heart-animated {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=c-acceuil.css.map */
