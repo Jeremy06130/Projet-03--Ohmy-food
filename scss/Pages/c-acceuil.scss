@@ -13,6 +13,7 @@
 @import "../Layouts/header";
 @import "../Layouts/local";
 @import "../Layouts/box";
+@import "../Layouts/Tuto";
 @import "../Layouts/main";
 @import "../Layouts/resto";
 @import "../Layouts/footer";
@@ -21,164 +22,6 @@
 // Components
 @import "../Components/bouton";
 
-/* Responsive */
-.container{
-@media (min-width: 250px) and (max-width: 350px) {
-  .container {
-    &--fonctionnement {
-      .tuto {
-        width: 80%;
-      }
-    }
-  }
-}
-
-@media (min-width: 450px) and (max-width: 1601px) {
-  .container {
-    &__title {
-      padding: 28px 0px 7px 0px;
-      text-align: center;
-    }
-    .tuto {
-      margin: 20px auto 20px auto;
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    &--restaurants {
-      .transform {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .card {
-        width: 45%;
-      }
-    }
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1600px) {
-  .container {
-    &--restaurants {
-      .transform {
-        display: flex;
-        margin-right: 20px;
-        margin-left: 20px;
-      }
-      .card {
-        box-sizing: border-box;
-        width: calc(33.3% - 10px);
-        margin: 15px;
-      }
-    }
-  }
-}
-
-@media (min-width: 1601px) {
-  .container {
-    &__title {
-      padding: 28px 0px 7px 0px;
-      text-align: center;
-    }
-    .tuto {
-      margin: 20px auto 20px auto;
-    }
-  }
-
-  .container {
-    &--restaurants {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 1440px;
-      border-radius: 30px 30px 0px 0px;
-      .transform {
-        display: flex;
-        margin-right: 20px;
-        margin-left: 20px;
-      }
-      .card {
-        box-sizing: border-box;
-        width: calc(33.3% - 10px);
-        margin: 15px;
-      }
-    }
-  }
-}
-
-}
-.tuto {
-  padding: ($appPadding + 1rem) $appPadding;
-
-  &__title {
-    margin-top: 0;
-  }
-
-  &__steps {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    counter-reset: compteListe;
-
-
-    @media (min-width:64rem) {
-      display: flex;
-    }
-  }
-
-  &__step {
-    padding: 1.5rem;
-    margin: 1rem 0 1rem 0.75rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
-    background-color: #f6f6f6;
-    display: flex;
-    position: relative;
-    &:hover {
-      background-color: $color-rose;
-    }
-
-    @media (min-width:64rem) {
-      flex: 1;
-      margin: 0;
-      margin-left: 2rem;
-
-      &:first-child {
-        margin-left: 0.75rem;
-      }
-    }
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &::before {
-      counter-increment: compteListe 1;
-      content: counter(compteListe) " ";
-      background: $color-primary;
-      height: 1.5rem;
-      width: 1.5rem;
-      border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      position: absolute;
-      left: -0.75rem;
-    }
-  }
-
-  &__icon {
-    margin-right: 1rem;
-    color: #7e7e7e;
-  }
-}
-
 .cards {
   display: flex;
   flex-direction: column;
@@ -186,16 +29,7 @@
   column-gap: 2rem;
   row-gap: 2rem;
 
-  @media (min-width:64rem) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
-
-.restaurants {
-  background-color: $color-gris;;
-  padding-bottom: 45px;
-}
-
 .card {
   border-radius: 15px;
   width: 88%;
@@ -207,14 +41,6 @@
   margin-right: auto;
   margin-top: 12px;
   margin-bottom: 20px;
-
-
-  &__image img {
-    width: 100%;
-    height: 134px;
-    border-radius: 14px 14px 0px 0px;
-    object-fit: cover;
-  }
 
   &__badge {
     position: absolute;
@@ -241,17 +67,6 @@
 
   &__subtitle {
     margin: 0;
-  }
-
-  &__heart {
-    position: absolute;
-    right: 28px;
-    bottom: 30px;
-    font-size: 25px;
-
-    &:hover .fa-heart-animated {
-      font-size: 25px;
-    }
   }
 }
 

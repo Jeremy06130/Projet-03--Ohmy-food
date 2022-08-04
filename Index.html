@@ -54,34 +54,58 @@
 
     <main class="main">
       <!--tutorielle du site-->
-      <section class="container">
-        <div class="tuto">
-          <!--titre-->
-          <h2 class="tuto__title">Fonctionnement</h2>
-          <ol class="tuto__steps">
-            <!--Boite 01-->
-            <li class="tuto__step">
-              <!--Icon telephone-->
-              <i class="tuto__icon fas fa-mobile-alt"></i>
-              <!--Titre-->
-              <span class="text">Choisissez un restaurant</span>
-            </li>
-            <!--Boite 02-->
-            <li class="tuto__step">
-              <!--Icon puces-->
-              <i class="tuto__icon fas fa-list-ul"></i>
-              <!--Titre-->
-              <span class="text">Composez votre menu</span>
-            </li>
-            <!--Boite 03-->
-            <li class="tuto__step">
-              <!--Icon Shop-->
-              <i class="tuto__icon fas fa-store"></i>
-              <!--Titre-->
-              <span class="text">Dégustez au restaurant</span>
-            </li>
-          </ol>
-        </div>
+      <section class="section section--fonctionnement">
+          <!--Titre-->
+          <h2 class="section__title">Fonctionnement</h2>
+
+          <!--Boite 01-->
+          <div class="tuto">
+              <div class="tuto__content">
+                  <!--numéro 01-->
+                  <div class="tuto__number">
+                      <span class="number--one">1</span>
+                  </div>
+                  <!--Icon telephone-->
+                  <div class="tuto__icon">
+                      <i class="fas fa-mobile-alt" aria-hidden="true"> </i>
+                  </div>
+                  <!--titre-->
+                  <p class="tuto__text">Choisissez un restaurant</p>
+              </div>
+          </div>
+
+          <!--Boite 01-->
+          <div class="tuto">
+              <div class="tuto__content">
+                  <!--numéro 02-->
+                  <div class="tuto__number">
+                      <span class="number--two">2</span>
+                  </div>
+                  <!--Icon puce-->
+                  <div class="tuto__icon">
+                      <i class="fas fa-list-ul" aria-hidden="true"> </i>
+                  </div>
+                  <!--titre-->
+                  <p class="tuto__text">Composez votre menu</p>
+              </div>
+          </div>
+
+          <!--Boite 03-->
+          <div class="tuto">
+              <div class="tuto__content">
+                  <!--numéro 03-->
+                  <div class="tuto__number">
+                      <span class="number--three">3</span>
+                  </div>
+                  <!--Icon stand-->
+                  <div class="tuto__icon">
+                      <i class="fas fa-store i--one" aria-hidden="true"> </i>
+                  </div>
+                  <!--titre-->
+                  <p class="tuto__text">Dégustez au restaurant</p>
+              </div>
+          </div>
+
       </section>
 
       <!--restaurant-->
@@ -206,27 +230,35 @@
 
     <!--Pied de page-->
     <footer class="footer">
-      <div class="container">
-        <!--Logo-->
-        <span class="footer__logo">ohmyfood</span>
-        <ul class="footer__list">
-          <!--titre avec icon couverts-->
-          <li class="footer__listElt">
-            <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
-          </li>
-          <!--Titre avec icon mains-->
-          <li class="footer__listElt">
-            <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
-          </li>
-          <!--sous titre 1-->
-          <li class="footer__listElt">
-            <a class="footer__link" href="#">Mentions légales</a>
-          </li>
-          <!--sous titre 2-->
-          <li class="footer__listElt">
-            <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
-          </li>
-        </ul>
+      <a class="footer__title" href="#">ohmyfood</a>
+
+      <div class="footer__content">
+        <!--puce 1-->
+        <div class="footer__content__subtitle">
+          <!--icone couverts-->
+          <i class="fas fa-utensils"></i>
+          <!--texte-->
+          <a class="footer__content__link" href="#">Proposer un restaurant</a>
+        </div>
+
+        <!--puce 2-->
+        <div class="footer__content__subtitle">
+          <!--icone couverts-->
+          <i class="fas fa-hands-helping icon"></i>
+          <!--texte-->
+          <a class="footer__content" href="#">Devenir Partenaire</a>
+        </div>
+
+        <!--puce 3-->
+        <div class="footer__content__subtitle">
+          <a class="footer__content" href="#">Mentions légales</a>
+        </div>
+
+        <!--puce 4-->
+        <div class="footer__content__subtitle">
+          <a class="footer__content" href="mailto:email@example.com">Contact</a>
+        </div>
+        
       </div>
     </footer>
   </div>
