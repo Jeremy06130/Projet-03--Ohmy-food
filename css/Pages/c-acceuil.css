@@ -107,16 +107,68 @@ a {
   font-family: "Roboto";
 }
 
-.header {
-  padding: 1rem 1.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  position: relative;
-  z-index: 1000;
+.bloc {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  animation: off;
+  animation-duration: 3s;
+  transition: opacity 3s ease-in-out;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
 }
-.header__logo {
-  font-family: "Shrikhand", "cursive";
-  margin: 0;
+.bloc__loader {
+  align-items: center;
+  justify-content: center;
+  border: solid 17px #99E2D0;
+  border-radius: 50%;
+  z-index: 1;
+  width: 167px;
+  height: 167px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-color: #9356dc;
+  animation: rotate linear infinite;
+  animation-duration: 3s;
+}
+
+/* Header Page d'acceuil */
+.header {
+  padding: 15px 0 8px 0px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1803921569);
   text-align: center;
+}
+.header__image {
+  justify-content: center;
+}
+
+/* Header Page menue */
+.header1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  padding: 10px 0 10px 0;
+  /* retour acceuil */
+}
+.header1__back {
+  font-size: 19px;
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  max-width: 1440px;
+}
+.header1__back a {
+  color: black;
+}
+.header1__title a {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  color: black;
 }
 
 .local {
@@ -175,6 +227,55 @@ a {
   margin: 0px 15px 10px;
 }
 
+.main {
+  /* main Page menue */
+}
+.main--1 {
+  padding-bottom: 40px;
+  background-color: whitesmoke;
+  border-radius: 30px 30px 0px 0px;
+}
+.main--1__image {
+  width: 100%;
+}
+.main--1__content {
+  display: flex;
+  font-size: 21px;
+  justify-content: CENTER;
+  padding: 20px 0px 20px 0px;
+}
+.main--1__content__title {
+  font-size: 30px;
+  font-family: "shrikhand";
+  padding: 0px 44px 0px 0px;
+}
+.main--1__content__heart {
+  position: relative;
+  height: 21px;
+}
+
+/* icone coeur pour toute page */
+#heart--icon {
+  position: relative;
+  height: 21px;
+  cursor: pointer;
+}
+#heart--icon:hover .fa-heart-animated {
+  font-size: 20px;
+}
+
+/* VERSION RESPONSIVE */
+@media (min-width: 1025px) {
+  .main {
+    /* main Page menue */
+  }
+  .main--1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+  }
+}
 .section {
   /* Responsive */
 }
@@ -184,6 +285,11 @@ a {
   font-size: 22px;
 }
 .section--fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
   padding-bottom: 18px;
 }
@@ -192,10 +298,12 @@ a {
   justify-content: flex-start;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1803921569);
   width: 300px;
-  margin: 5% 10%;
+  margin: 2% 5%;
   border-radius: 16px;
   height: 60px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section--fonctionnement .tuto__number {
   padding: 1px 5px;
@@ -252,48 +360,6 @@ a {
   }
 }
 
-.main--1 {
-  padding-bottom: 40px;
-  background-color: whitesmoke;
-  border-radius: 30px 30px 0px 0px;
-}
-.main--1__image {
-  width: 100%;
-}
-.main--1__content {
-  display: flex;
-  font-size: 21px;
-  justify-content: CENTER;
-  padding: 20px 0px 20px 0px;
-}
-.main--1__content__title {
-  font-size: 30px;
-  font-family: "shrikhand";
-  padding: 0px 44px 0px 0px;
-}
-.main--1__content__heart  {
-  position: relative;
-  height: 21px;
-}
-
-#heart--icon {
-  position: relative;
-  height: 21px;
-  cursor: pointer;
-}
-#heart--icon:hover .fa-heart-animated {
-  font-size: 20px;
-}
-
-/* VERSION RESPONSIVE */
-@media (min-width: 1025px) {
-  .main--1 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1440px;
-  }
-}
 .resto {
   /* Responsive */
 }
@@ -453,34 +519,6 @@ a {
     text-align: center;
   }
 }
-.bloc {
-  background-color: white;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  animation: off;
-  animation-duration: 3s;
-  transition: opacity 3s ease-in-out;
-  animation-delay: 1.75s;
-  animation-fill-mode: both;
-}
-.bloc__loader {
-  align-items: center;
-  justify-content: center;
-  border: solid 17px #99E2D0;
-  border-radius: 50%;
-  z-index: 1;
-  width: 167px;
-  height: 167px;
-  margin-top: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  border-top-color: #9356dc;
-  animation: rotate linear infinite;
-  animation-duration: 3s;
-}
-
 .button {
   background-image: linear-gradient(135deg, #FF79DA, #9356DC);
   border-radius: 20px;

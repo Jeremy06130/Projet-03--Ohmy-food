@@ -250,16 +250,40 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Header Page d'acceuil */
 .header {
-  padding: 1rem 1.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  position: relative;
-  z-index: 1000;
-}
-.header__logo {
-  font-family: "Shrikhand", "cursive";
-  margin: 0;
+  padding: 15px 0 8px 0px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1803921569);
   text-align: center;
+}
+.header__image {
+  justify-content: center;
+}
+
+/* Header Page menue */
+.header1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  padding: 10px 0 10px 0;
+  /* retour acceuil */
+}
+.header1__back {
+  font-size: 19px;
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  max-width: 1440px;
+}
+.header1__back a {
+  color: black;
+}
+.header1__title a {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  color: black;
 }
 
 .bloc {
@@ -290,6 +314,9 @@ body {
   animation-duration: 3s;
 }
 
+.main {
+  /* main Page menue */
+}
 .main--1 {
   padding-bottom: 40px;
   background-color: whitesmoke;
@@ -309,11 +336,12 @@ body {
   font-family: "shrikhand";
   padding: 0px 44px 0px 0px;
 }
-.main--1__content__heart  {
+.main--1__content__heart {
   position: relative;
   height: 21px;
 }
 
+/* icone coeur pour toute page */
 #heart--icon {
   position: relative;
   height: 21px;
@@ -325,6 +353,9 @@ body {
 
 /* VERSION RESPONSIVE */
 @media (min-width: 1025px) {
+  .main {
+    /* main Page menue */
+  }
   .main--1 {
     width: 90%;
     margin-left: auto;

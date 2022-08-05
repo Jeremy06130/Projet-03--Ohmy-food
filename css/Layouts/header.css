@@ -1,17 +1,37 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   padding: 1rem $appPadding;
- *   |                 ^^^^^^^^^^^
- *   '
- *   scss\Layouts\header.scss 2:17  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    padding: 1rem $appPadding;\a   \2502                  ^^^^^^^^^^^\a   \2575 \a   scss\\Layouts\\header.scss 2:17  root stylesheet";
+/* Header Page d'acceuil */
+.header {
+  padding: 15px 0 8px 0px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1803921569);
+  text-align: center;
 }
+.header__image {
+  justify-content: center;
+}
+
+/* Header Page menue */
+.header1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  padding: 10px 0 10px 0;
+  /* retour acceuil */
+}
+.header1__back {
+  font-size: 19px;
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  max-width: 1440px;
+}
+.header1__back a {
+  color: black;
+}
+.header1__title a {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  color: black;
+}
+
+/*# sourceMappingURL=header.css.map */

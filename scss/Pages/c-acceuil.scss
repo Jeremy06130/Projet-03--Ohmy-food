@@ -10,14 +10,15 @@
 @import "../Base/Styles";
 
 //Layouts
+@import "../Layouts/Spinner";
 @import "../Layouts/header";
 @import "../Layouts/local";
 @import "../Layouts/intro";
-@import "../Layouts/Tuto";
 @import "../Layouts/main";
+@import "../Layouts/Tuto";
 @import "../Layouts/resto";
 @import "../Layouts/footer";
-@import "../Layouts/Spinner";
+
 
 // Components
 @import "../Components/bouton";

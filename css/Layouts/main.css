@@ -1,4 +1,6 @@
-@charset "UTF-8";
+.main {
+  /* main Page menue */
+}
 .main--1 {
   padding-bottom: 40px;
   background-color: whitesmoke;
@@ -18,11 +20,12 @@
   font-family: "shrikhand";
   padding: 0px 44px 0px 0px;
 }
-.main--1__content__heart  {
+.main--1__content__heart {
   position: relative;
   height: 21px;
 }
 
+/* icone coeur pour toute page */
 #heart--icon {
   position: relative;
   height: 21px;
@@ -34,6 +37,9 @@
 
 /* VERSION RESPONSIVE */
 @media (min-width: 1025px) {
+  .main {
+    /* main Page menue */
+  }
   .main--1 {
     width: 90%;
     margin-left: auto;
