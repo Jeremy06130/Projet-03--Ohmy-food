@@ -1,22 +1,22 @@
 //importation des fichiers SASS
+
 //utiles
 @import "../Utiles/variable";
 @import "../Utiles/animation";
 
-//page type
-@import "../Pages/pagetype";
-
 //Base
 @import "../Base/Styles";
 
+//page type
+@import "../Pages/pagetype";
+
 //Layouts
 @import "../Layouts/header";
-@import "../Layouts/local";
-@import "../Layouts/box";
-@import "../Layouts/main";
-@import "../Layouts/footer";
 @import "../Layouts/Spinner";
+@import "../Layouts/main";
+@import "../Layouts/box";
 @import "../Layouts/subheader";
+@import "../Layouts/footer";
 
 // Components
 @import "../Components/bouton";
