@@ -151,100 +151,30 @@ a {
     height: 35vh;
   }
 }
-.box__menu__title {
-  margin: 24px 0px 8px 18px;
-  border-bottom: 3px solid #99e2d0;
-  padding-bottom: 6px;
-  width: 11%;
+/* Introduction de la page d'acceuil */
+.intro {
+  background: rgba(153, 226, 208, 0.1607843137);
+  margin-top: 0px;
+  margin: -16px 0 0 0;
+  padding-bottom: 40px;
 }
-.box__element {
-  border-radius: 10px;
-  background-color: white;
-  width: 92%;
-  display: block;
-  margin-left: auto;
-  /*centré*/
-  margin-right: auto;
-  margin-top: 12px;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1803921569);
-  position: relative;
-  animation-duration: 1s;
-  animation-name: appear;
-  transform: scale(0);
-  animation-fill-mode: both;
+.intro__content {
+  color: black;
+  font-family: "Roboto";
 }
-.box__contents {
-  display: flex;
-}
-.box__contents:hover .box__check {
-  width: 40px;
-  border-radius: 0px 10px 10px 0px;
-}
-.box__contents:hover .box__contents__left {
-  width: calc(100% - 40px);
-}
-.box__contents__title {
-  font-weight: 800;
-}
-.box__contents__left {
-  width: 100%;
-  padding: 0.8em;
-  position: relative;
-  box-sizing: border-box;
-}
-.box__contents__inline {
-  display: flex;
-  padding-top: 5px;
-}
-.box__contents__inline__subtitle {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 82%;
-}
-.box__contents__inline__price {
-  position: absolute;
-  right: 5%;
-}
-.box__check {
-  height: 100%;
-  right: 0px;
-  top: 0;
-  width: 0px;
-  background: #99E2D0;
-  display: flex;
+.intro__title {
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  text-align: center;
+  margin: 15px 0px 10px 0px;
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 22px;
+}
+.intro__subtitle {
+  text-align: center;
+  margin: 0px 15px 10px;
 }
 
-/*page de détail*/
-@media (min-width: 450px) and (max-width: 767px) {
-  .box__menu__title {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .box__element {
-    width: 350px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .box {
-    display: flex;
-  }
-  .box__menu {
-    width: calc(33.3% - 2px);
-  }
-}
-@media (min-width: 1025px) {
-  .box {
-    display: flex;
-  }
-  .box__menu {
-    width: calc(33.3% - 2px);
-  }
-}
 .section {
   /* Responsive */
 }
@@ -371,6 +301,13 @@ a {
   background-color: rgba(153, 226, 208, 0.1607843137);
   padding-bottom: 45px;
 }
+.resto--restaurants .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
 .resto--restaurants .card {
   border-radius: 15px;
   width: 88%;
@@ -395,11 +332,24 @@ a {
   color: black;
   padding: 10px 0px 0px 13px;
 }
+.resto--restaurants .card__badge {
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  background: #99E2D0;
+  padding: 4px 13px;
+  font-size: 14px;
+  color: #369658;
+  font-weight: 800;
+}
 .resto--restaurants .card__title {
   font-weight: 800;
+  margin: 0;
+  margin-bottom: 0.25rem;
 }
 .resto--restaurants .card__subtitle {
   padding: 8px 22px 0px 0px;
+  margin: 0;
 }
 .resto--restaurants .card__new {
   position: absolute;
@@ -552,50 +502,6 @@ a {
   opacity: 1;
   animation: flash 1.5s;
   box-shadow: 5px 15px 21px rgba(0, 0, 0, 0.5019607843);
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  column-gap: 2rem;
-  row-gap: 2rem;
-}
-
-.card {
-  border-radius: 15px;
-  width: 88%;
-  height: 205px;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1803921569);
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
-  margin-bottom: 20px;
-}
-.card__badge {
-  position: absolute;
-  top: 13px;
-  right: 8px;
-  background: #99E2D0;
-  padding: 4px 13px;
-  font-size: 14px;
-  color: #369658;
-  font-weight: 800;
-}
-.card__content {
-  display: grid;
-  padding: 5px 181px 0px 0px;
-  color: black;
-  padding: 10px 0px 0px 13px;
-}
-.card__title {
-  margin: 0;
-  margin-bottom: 0.25rem;
-}
-.card__subtitle {
-  margin: 0;
 }
 
 /*# sourceMappingURL=c-acceuil.css.map */

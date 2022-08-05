@@ -3,6 +3,15 @@
     background-color: $color-gris;
     padding-bottom: 45px;
 
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      column-gap: 2rem;
+      row-gap: 2rem;
+
+    }
+
     .card {
       border-radius: 15px;
       width: 88%;
@@ -29,12 +38,26 @@
         padding: 10px 0px 0px 13px;
       }
 
+      &__badge {
+        position: absolute;
+        top: 13px;
+        right: 8px;
+        background: $color-tertiary;
+        padding: 4px 13px;
+        font-size: 14px;
+        color: $color-vert;
+        font-weight: 800;
+      }
+
       &__title {
         font-weight: 800;
+        margin: 0;
+        margin-bottom: 0.25rem;
       }
 
       &__subtitle {
         padding: 8px 22px 0px 0px;
+        margin: 0;
       }
 
       &__new {

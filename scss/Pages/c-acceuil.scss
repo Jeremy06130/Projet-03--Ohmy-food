@@ -9,11 +9,10 @@
 //Base
 @import "../Base/Styles";
 
-
 //Layouts
 @import "../Layouts/header";
 @import "../Layouts/local";
-@import "../Layouts/box";
+@import "../Layouts/intro";
 @import "../Layouts/Tuto";
 @import "../Layouts/main";
 @import "../Layouts/resto";
@@ -22,53 +21,3 @@
 
 // Components
 @import "../Components/bouton";
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  column-gap: 2rem;
-  row-gap: 2rem;
-
-}
-.card {
-  border-radius: 15px;
-  width: 88%;
-  height: 205px;
-  box-shadow: 0 5px 16px #0000002e;
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
-  margin-bottom: 20px;
-
-  &__badge {
-    position: absolute;
-    top: 13px;
-    right: 8px;
-    background: $color-tertiary;
-    padding: 4px 13px;
-    font-size: 14px;
-    color: $color-vert;
-    font-weight: 800;  
-  }
-
-  &__content {
-    display: grid;
-    padding: 5px 181px 0px 0px;
-    color: black;
-    padding: 10px 0px 0px 13px;
-  }
-
-  &__title {
-    margin: 0;
-    margin-bottom: 0.25rem;
-  }
-
-  &__subtitle {
-    margin: 0;
-  }
-}
-
-
