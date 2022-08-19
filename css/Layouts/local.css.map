@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/Layouts/local.scss","../../scss/Utiles/variable.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA,kBCHa;;ADKb;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIR;EACI;;AAGJ;EACI;;AAEA;EACI;;;AAMZ;AAEA;EAEQ;IACI","file":"local.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/Layouts/local.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIR;EACI;;AAGJ;EACI;;AAEA;EACI;;;AAMZ;AAEA;EAEQ;IACI","file":"local.css"}

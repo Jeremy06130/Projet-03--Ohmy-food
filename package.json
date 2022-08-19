@@ -11,5 +11,9 @@
   "dependencies": {
     "-": "^0.0.1",
     "sass": "^1.53.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Projet 3 - oh my good"
   }
 }
