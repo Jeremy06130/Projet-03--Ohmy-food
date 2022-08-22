@@ -1,97 +1,17 @@
-@charset "UTF-8";
-.box__menu__title {
-  margin: 24px 0px 8px 18px;
-  border-bottom: 3px solid #99e2d0;
-  padding-bottom: 6px;
-  width: 11%;
-}
-.box__element {
-  border-radius: 10px;
-  background-color: white;
-  width: 92%;
+/* Error: Undefined variable.
+ *    ,
+ * 70 |     background: $color-tertiary;
+ *    |                 ^^^^^^^^^^^^^^^
+ *    '
+ *   scss\Layouts\box.scss 70:17  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  margin-left: auto;
-  /*centré*/
-  margin-right: auto;
-  margin-top: 12px;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1803921569);
-  position: relative;
-  animation-duration: 1s;
-  animation-name: appear;
-  transform: scale(0);
-  animation-fill-mode: both;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 70 \2502      background: $color-tertiary;\d\a    \2502                  ^^^^^^^^^^^^^^^\a    \2575 \a   scss\\Layouts\\box.scss 70:17  root stylesheet";
 }
-.box__contents {
-  display: flex;
-}
-.box__contents:hover .box__check {
-  width: 40px;
-  border-radius: 0px 10px 10px 0px;
-}
-.box__contents:hover .box__contents__left {
-  width: calc(100% - 40px);
-}
-.box__contents__title {
-  font-weight: 800;
-}
-.box__contents__left {
-  width: 100%;
-  padding: 0.8em;
-  position: relative;
-  box-sizing: border-box;
-}
-.box__contents__inline {
-  display: flex;
-  padding-top: 5px;
-}
-.box__contents__inline__subtitle {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 82%;
-}
-.box__contents__inline__price {
-  position: absolute;
-  right: 5%;
-}
-.box__check {
-  height: 100%;
-  right: 0px;
-  top: 0;
-  width: 0px;
-  background: #99E2D0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-/*page de détail*/
-@media (min-width: 450px) and (max-width: 767px) {
-  .box__menu__title {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .box__element {
-    width: 350px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .box {
-    display: flex;
-  }
-  .box__menu {
-    width: calc(33.3% - 2px);
-  }
-}
-@media (min-width: 1025px) {
-  .box {
-    display: flex;
-  }
-  .box__menu {
-    width: calc(33.3% - 2px);
-  }
-}
-
-/*# sourceMappingURL=box.css.map */
