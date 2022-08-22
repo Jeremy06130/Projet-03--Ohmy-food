@@ -1,11 +1,18 @@
 .resto {
+  
+  &__title {
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+  
   &--restaurants {
     background-color: $color-gris;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
 
     .cards {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       column-gap: 2rem;
       row-gap: 2rem;
