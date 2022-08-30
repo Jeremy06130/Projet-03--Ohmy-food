@@ -1,7 +1,7 @@
 .local {
   display: flex;
   justify-content: center;
-  background-color: #99E2D0;
+  background-color: rgba(196, 193, 193, 0.4588235294);
 }
 .local__image {
   width: 100%;

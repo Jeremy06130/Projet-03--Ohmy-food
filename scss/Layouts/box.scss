@@ -29,12 +29,8 @@
     display: flex;
 
     &:hover .box__check {
-      width: 40px;
+      width:40px;
       border-radius: 0px 10px 10px 0px;
-    }
-
-    &:hover .box__contents__left {
-      width: calc(100% - 40px);
     }
 
     &__title {
@@ -71,12 +67,12 @@
     right: 0px;
     top: 0;
     width: 0px;
-    background: #99E2D0;
+    background: $color-tertiary;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 1s ease-out;
   }
 }
 
