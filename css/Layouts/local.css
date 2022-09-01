@@ -1,3 +1,5 @@
+/*couleur de base*/
+/*autre couleurs*/
 .local {
   display: flex;
   justify-content: center;
@@ -21,7 +23,7 @@
   margin: 10px 10px 5px 0px;
 }
 .local__content a {
-  color: black;
+  color: #000;
 }
 
 /* RESPONSIVE*/

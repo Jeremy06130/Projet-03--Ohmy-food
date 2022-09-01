@@ -2,7 +2,7 @@
   &__title {
     padding: 28px 0px 8px 26px;
     font-weight: 800;
-    font-size: 22px;
+    font-size: $size-cinq;
   }
 
   &--fonctionnement {
@@ -11,13 +11,13 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: $color-bg;
     padding-bottom: 18px;
 
     .tuto {
       display: flex;
       justify-content: flex-start;
-      box-shadow: 0 5px 16px #0000002e;
+      box-shadow: 0 5px 16px $ombre;
       width: 300px;
       margin: 2% 5%;
       border-radius: 16px;
@@ -34,7 +34,7 @@
 
       &__number {
         padding: 1px 5px;
-        color: white;
+        color: $couleur-encre-sec;
         background-color: $color-primary;
         border-radius: 10px;
         height: 17px;
@@ -47,8 +47,8 @@
       }
 
       &__icon {
-        color: GREY;
-        font-size: 16px;
+        color: $color-grisc;
+        font-size: $size-deux;
         width: 50px;
         display: flex;
         justify-content: center;

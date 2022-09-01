@@ -4,14 +4,14 @@
   height: 40px;
   border: none;
   width: 230px;
-  box-shadow: 5px 6px 7px #0000002e;
+  box-shadow: 5px 6px 7px $ombre;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
 
   &__text {
-    color: white;
+    color: $couleur-encre-sec;
     text-align: center;
   }
 

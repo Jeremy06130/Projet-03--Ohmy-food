@@ -1,6 +1,6 @@
 
 .bloc {
-    background-color: white;
+    background-color: $color-bg;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -22,7 +22,7 @@
       margin-top: 20%;
       margin-left: auto;
       margin-right: auto;
-      border-top-color: #9356dc;
+      border-top-color: $color-primary;
       animation: rotate linear infinite;
       animation-duration: 3s ;
     }

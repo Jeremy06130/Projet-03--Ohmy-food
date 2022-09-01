@@ -1,11 +1,34 @@
+/*couleur de base*/
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+
+/*autre couleurs*/
 $color-vert: #369658;
 $color-gris: #b9bbba28;
 $color-grisc: #c4c1c175;
-$color-rose: #dabfd2;
 $color-grisf: #171d1b9d;
 
-$appPadding: 1rem;
-$appPadding: 1.5rem;
+// couleur additionnelle bouton loadeur
+$couleur-load: #FFF;
+
+// couleur background
+$color-bg: #FAFAFA;
+$coul-bg: #FFF;
+
+// couleur backgroud footer
+$couleur-footer: #363636;
+
+// couleur police
+$couleur-encre: #000;
+$couleur-encre-sec: #FFF;
+
+// couleur box-shadow
+$ombre: #b4b4b4;
+
+// taille police
+$size-un: 1rem;
+$size-deux: 1.5rem;
+$size-trois: 1.1rem;
+$size-quatre: 1.2rem;
+$size-cinq: 1.8rem;

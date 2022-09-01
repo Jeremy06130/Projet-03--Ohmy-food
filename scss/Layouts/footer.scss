@@ -1,6 +1,6 @@
 
 .footer {
-  background-color: $color-grisf;
+  background-color: $couleur-footer;
   padding: 18px 0px 18px 24px;
   margin-top: -5px;
   a {
@@ -9,7 +9,7 @@
 
   &__title {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: $size-quatre;
     font-family: 'Shrikhand', 'cursive';
     margin: 0;
     margin-bottom: 0.25rem;
