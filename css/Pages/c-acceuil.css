@@ -507,9 +507,9 @@ body {
   /* Responsive */
 }
 .resto__title {
+  padding: 28px 0px 8px 26px;
   font-weight: 800;
-  margin: 0;
-  margin-bottom: 0.25rem;
+  font-size: 22px;
 }
 .resto--restaurants {
   background-color: rgba(185, 187, 186, 0.1568627451);
