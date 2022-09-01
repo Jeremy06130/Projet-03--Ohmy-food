@@ -30,12 +30,12 @@
     display: flex;
 
     &:hover .box__check {
-      width:40px;
+      width:30px;
       border-radius: 0px 10px 10px 0px;
     }
 
     &:hover .box__contents__left {
-      width: calc(130% - 30px);
+      width: calc(100% - 30px);
     }
 
     &__title {
