@@ -34,23 +34,4 @@
   color: black;
 }
 
-#heart--icon {
-  position: relative;
-  height: 21px;
-  cursor: pointer;
-}
-#heart--icon:hover .fa-heart-animated {
-  font-size: 20px;
-}
-
-/* RESPONSIVE */
-@media (min-width: 1025px) {
-  .main--1 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1440px;
-  }
-}
-
 /*# sourceMappingURL=header.css.map */
