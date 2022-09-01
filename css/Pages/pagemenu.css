@@ -278,11 +278,11 @@ body {
   font-size: 19px;
   position: absolute;
   left: 20px;
-  top: 35px;
+  top: 25px;
   max-width: 1440px;
 }
 .header1__title {
-  width: 200px;
+  width: auto;
   padding: 10px 0;
   margin: 0 auto;
   font-size: 1.8rem;
