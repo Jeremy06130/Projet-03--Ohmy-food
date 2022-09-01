@@ -485,7 +485,7 @@ body {
     display: flex;
   }
   .box__menu {
-    width: calc(33.3% - 2px);
+    width: calc(35.3% - 2px);
   }
 }
 .subheader {
