@@ -30,7 +30,7 @@
     display: flex;
 
     &:hover .box__check {
-      width:30px;
+      width:40px;
       border-radius: 0px 10px 10px 0px;
     }
 
@@ -93,7 +93,7 @@
     }
 
     &__element {
-      width: 350px;
+      min-width: 350px;
     }
   }
 }
@@ -103,7 +103,7 @@
     display: flex;
 
     &__menu {
-      width: calc(33.3% - 2px);
+      min-width: calc(33.3% - 2px);
     }
   }
 }
@@ -113,7 +113,7 @@
     display: flex;
 
     &__menu {
-      width: calc(33.3% - 2px);
+      min-width: calc(33.3% - 2px);
     }
   }
 }
