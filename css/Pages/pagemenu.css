@@ -71,7 +71,7 @@
     z-index: -1;
   }
 }
-/* Animation du bouton */
+/* Animation du bouton  */
 @keyframes flash {
   0% {
     opacity: 0.2;
