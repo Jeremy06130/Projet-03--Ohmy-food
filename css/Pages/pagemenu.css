@@ -474,8 +474,9 @@ body {
   color: white;
 }
 .footer__title {
-  font-weight: 800;
-  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Shrikhand", "cursive";
   margin: 0;
   margin-bottom: 0.25rem;
 }
