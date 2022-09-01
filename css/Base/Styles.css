@@ -1,11 +1,11 @@
 /*POLICES*/
 @font-face {
   font-family: "Roboto";
-  src: url("Polices/Roboto/Roboto-Regular-webfont.ttf");
+  src: url("Polices/Roboto/Roboto-Regular-webfont");
 }
 @font-face {
   font-family: "shrikhand";
-  src: url("Polices/shrikhand/Shrikhand-Regular.ttf");
+  src: url("Polices/shrikhand/Shrikhand-Regular");
 }
 h1,
 h2,
